@@ -1,38 +1,149 @@
-.App {
+body{
+    background-color: rgb(177, 20, 20);
+}
+.titre{
   text-align: center;
+  background-color: #ffda00;
+  height: 50px;
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 25%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    width: 700px;
+    height: 400px;
+    background: transparent;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+    transition: all 0.5s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card:hover {
+    transform: scale(1);
+    box-shadow: 0 5px 10px -12.125px rgba(0, 0, 0, 0.2);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card-1 {
+    width: 40%;
+    height: 400px;
+    float: left;
+    overflow: hidden;
+    background: transparent;
   }
-  to {
-    transform: rotate(360deg);
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    overflow: hidden;
   }
-}
+  .card-2 {
+    width: 60%;
+    float: left;
+    background: black;
+    height: 400px;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+  }
+  .card-2  h1 ,h4,p{
+color: white;
+  }
+  .card-2-rating{
+    margin: 10px 0 10px 40px;
+    color: #ffda00;
+    font-size: 2rem;
+  }
+  .card-2-description{
+    color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding: 0 40px 0 40px;
+  letter-spacing: 1px;
+  margin: 10px 0 10px 0;
+  line-height: 20px;
+  }
+  .search-container {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    justify-items: baseline;
+  }
+  .search-container input {
+    width: 60%;
+    height: 10%;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    color: grey;
+    padding: 8px 0 8px 10px;
+    margin-right: 10px;
+  }
+  .rating-search {
+    color: #ffda00;
+    font-size: 1.5rem;
+  }
+  .Add-btn {
+    background-color: black;
+    border: transparent;
+    color: white;
+    font-size: 100px;
+    padding: 8px 20px;
+    margin: 30px 0;
+    cursor: pointer;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .Add-btn:hover {
+    background-color: #ffda00;
+    color: black;
+  }
+  .addMovie-h1 {
+    color: #1e1b26;
+  }
+  .add-modal {
+    position: relative;
+    top: 4%;
+    left: 32%;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    border: 1px solid #1e1b26;
+    border-radius: 5px;
+    background-color:rgb(177, 20, 20);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  form input {
+    width: 95%;
+    height: 70%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    color: grey;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  form label {
+    margin-top: 20px;
+  }
+  .Modal-btn {
+    border-radius: 5px;
+    background-color: #ffda00;
+    border: transparent;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+  }
+  .Trailer{
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   padding: 200px;
+   text-align: center;
+  }
+  
